@@ -263,8 +263,9 @@ input, button {
 }
 
 .wrp {
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main__posts-picture {
@@ -346,6 +347,7 @@ input, button {
 .main__posts__divider:last-child {
     margin-bottom: 40px;
 }
+
 
 .aside__heading {
     margin-bottom: 40px;
@@ -514,6 +516,7 @@ input, button {
 .aside__topiclist {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .aside__topicitem {

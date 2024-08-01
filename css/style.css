@@ -709,6 +709,8 @@ select {
 }
 
 .popup {
+    display: none;
+
     position: fixed;
     top: 0;
     right: 0;
@@ -850,6 +852,18 @@ select {
     font-size: 14px;
     font-weight: 700;
 
+}
+
+@media (max-width: 640px) and (orientation:landscape) {
+    .trends-card {
+        width: calc(50% - 2px);
+    }
+
+    .trends-flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
 }
 
 @media (min-width: 641px) {
@@ -1032,6 +1046,12 @@ select {
 
     .popup__window {
         width: 390px;
+    }
+}
+
+@media (min-width: 641px) and (orientation: landscape) {
+    .trends-card {
+        width: calc(25% - 3px);
     }
 }
 

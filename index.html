@@ -189,14 +189,14 @@
       </article>
       <form name="searchform" action="#" class="aside__search">
         <label class="aside__searchlabel"><span class="visually-hidden">Поле для поиска</span>
-        <input class="aside__field searchfield" type="search" placeholder="найти..." id="searchsite" name="searchsite" required>
+        <input class="aside__field field searchfield" type="search" placeholder="найти..." id="searchsite" name="searchsite" required>
         </label>
         <button type="button" class="aside__searchbutton"><span class="visually-hidden">кнопка поиска</span></button>
       </form>
       <h2 class="aside__signupheading heading">рассылка</h2>
       <form name="signform" action="#" class="aside__signup">
         <label class="aside__signuplabel"><span class="visually-hidden">Поле для ввода email</span>
-        <input class="aside__field signupfield" type="search" placeholder="Ваш email-адрес" id="searchsite" name="searchsite" required>
+        <input class="aside__field field signupfield" type="search" placeholder="Ваш email-адрес" id="searchsite" name="searchsite" required>
         </label>
         <button type="button" class="aside__signupbutton"><span class="visually-hidden">кнопка подписки</span>подписаться</button>
       </form>
@@ -289,6 +289,41 @@
       </ul>
     </footer>
     <a href="#0" class="copyright">Copyright © 2009–2019 City Blog LLC.</a> 
-   </div>   
+   </div> 
+   <div class="popup">
+    <div class="popup__window">
+      <div class="popup__close"></div>
+      <div class="popup__wrp heading-flex">
+      <h2 class="popup__heading heading">ваш фидбек</h2>
+      <form action="#" name="attendance" class="popup__attendance">
+        <label for="attendance-select" class="popup__attendance-label label">Как часто вы заходите на сайт?</label>
+        <select id="attendance-select" class="popup__attendance-select field" name="attendance-option">
+          <option value="every-day" class="popup__attendance-option" selected>Почти каждый день</option>
+          <option value="once-few-days" class="popup__attendance-option">Раз в несколько дней</option>
+          <option value="once-few-weeks" class="popup__attendance-option">Раз в несколько недель</option>
+          <option value="few-times-year" class="popup__attendance-option">Несколько раз в год</option>
+        </select>
+      </form>
+      <form class="popup__subscription">
+        <div class="popup__subscription-heading">
+          <label for="subscription-radio" class="popup__subscription-label label">Вы подписаны на e-mail рассылку?</label>
+        </div>
+        <label class="popup__subscription-radiolabel">
+          <input type="radio" name="subscription" value="yes" class="popup__subscription-radio visually-hidden" checked>
+          <span class="popup__subscription-option">Да</span>
+        </label>
+        <label class="popup__subscription-radiolabel">
+          <input type="radio" name="subscription" value="no" class="popup__subscription-radio">
+          <span class="popup__subscription-option">Нет</span>
+        </label>
+      </form>
+      <form class="popup__request">
+        <label for="content-question" class="popup__request-label label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+        <input id="content-question" class="popup__request-field" type="text" placeholder="Может, больше рецептов?" name="popupquestion" maxlength="500">
+      </form>
+      <button type="button" class="popup__button">отправить</button>
+    </div>
+  </div>
+   </div>
 </body>
 </html>
